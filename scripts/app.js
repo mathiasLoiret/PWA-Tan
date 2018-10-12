@@ -121,9 +121,7 @@
   app.favoriteStop = localStorage.favoriteStop;
   if (app.favoriteStop) {
     app.favoriteStop = JSON.parse(app.favoriteStop);
-    app.favoriteStop.forEach(function(stops) {
-      app.getStops(stops.id, stop.ligne);
-    });
+    app.favoriteStop.forEach(app.updateStopCard);
   } else {
     /* The user is using the app for the first time, or the user has not
      * saved any cities, so show the user some fake data. A real app in this
@@ -132,6 +130,7 @@
      */
     var test = getLocation()
     initialStopData.forEach(app.updateStopCard)
+    localStorage.favoriteStop = initialStopData
   }
 
 

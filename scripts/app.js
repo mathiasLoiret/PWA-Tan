@@ -78,10 +78,6 @@
   // doesn't already exist, it's cloned from the template.
   app.updateForecastCard = function(data) {
     var dataLastUpdated = new Date(data.created);
-    var sunrise = data.channel.astronomy.sunrise;
-    var sunset = data.channel.astronomy.sunset;
-    var current = data.channel.item.condition;
-    var humidity = data.channel.atmosphere.humidity;
     var wind = data.channel.wind;
     // Verifies the data provide is newer than what's already visible
     // on the card, if it's not bail, if it is, continue and update the

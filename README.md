@@ -1,4 +1,6 @@
-## PWA-TAN" 
+<p align="center"> 
+  <img src="https://github.com/mathiasLoiret/PWA-Tan/blob/master/images/logo.PNG">
+</p>
 
 Programme de visualisation des horraires bus / tram / ferry de la ville de Nantes.
 l'application est capable de géolocaliser l'utilisateur pour proposer les arrêts les plus proche de sa position actuelle.

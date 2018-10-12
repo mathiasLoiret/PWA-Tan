@@ -130,7 +130,7 @@
      */
     var test = getLocation()
     initialStopData.forEach(app.updateStopCard)
-    localStorage.favoriteStop = initialStopData
+    localStorage.favoriteStop = JSON.stringify(initialStopData)
   }
 
 

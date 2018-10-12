@@ -39,6 +39,9 @@
       app.container.appendChild(card)
       app.visibleCards[data.codeLieu] = card
     }
+
+    card.querySelector(".card-title").textContent = name
+    card.querySelector(".card-text").textContent = lignes.slice(0,-1)
   }
 
   const initialStopData = [
@@ -129,10 +132,6 @@
      */
     var test = getLocation()
     initialStopData.forEach(app.updateStopCard)
-    app.favoriteStop = [
-      {key: initialStopData.id, label: initialStopData.ligne}
-    ];
-    app.savefavoriteStop();
   }
 
 

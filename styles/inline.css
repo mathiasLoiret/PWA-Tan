@@ -18,6 +18,9 @@
   display: inline-block;
 }
 
+.icon-mode{
+  width : 5vw;
+}
 * {
   box-sizing: border-box; }
 
